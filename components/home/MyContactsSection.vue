@@ -31,12 +31,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "ContactsSection",
-};
-</script>
-
 <style lang="scss">
 @use "@/assets/scss/variables" as *;
 

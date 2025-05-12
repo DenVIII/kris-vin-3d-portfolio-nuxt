@@ -92,12 +92,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "PaymentView",
-};
-</script>
-
 <style lang="scss" scoped>
 @use "@/assets/scss/variables" as *;
 

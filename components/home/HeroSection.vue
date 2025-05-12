@@ -8,12 +8,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "HeroSection",
-};
-</script>
-
 <style lang="scss">
 @use "@/assets/scss/variables" as *;
 

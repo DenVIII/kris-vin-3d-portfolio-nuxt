@@ -62,12 +62,6 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: "FooterSection",
-};
-</script>
-
 <style lang="scss">
 @use "@/assets/scss/variables" as *;
 

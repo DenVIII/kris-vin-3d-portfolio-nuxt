@@ -50,12 +50,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "AboutSection",
-};
-</script>
-
 <style lang="scss">
 @use "@/assets/scss/variables" as *;
 

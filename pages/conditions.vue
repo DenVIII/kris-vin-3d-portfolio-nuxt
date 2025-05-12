@@ -174,13 +174,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ConditionsView",
-  components: {},
-};
-</script>
-
 <style lang="scss" scoped>
 @use "@/assets/scss/variables" as *;
 
