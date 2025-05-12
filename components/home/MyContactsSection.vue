@@ -3,30 +3,32 @@
     <h2 class="header my-contacts__header">Давайте поработаем вместе!</h2>
     <p class="subheader my-contacts__subheader">Мои контакты:</p>
     <div class="my-contacts__social social">
-      <a href="#"
+      <NuxtLink
+        class="social__icon"
+        to="#"
         ><img
           src="/icons/Telegram.svg"
           alt="иконка Telegram"
           class="social__icon"
-      /></a>
-      <a href="#"
+      /></NuxtLink>
+      <NuxtLink to="#"
         ><img
           src="/icons/VK-Logo.svg"
           alt="иконка вконтакте"
           class="social__icon"
-      /></a>
-      <a href="#"
+      /></NuxtLink>
+      <NuxtLink to="#"
         ><img
           src="/icons/Email_inverted.svg"
           alt="иконка Email"
           class="social__icon"
-      /></a>
-      <a href="#"
+      /></NuxtLink>
+      <NuxtLink to="#"
         ><img
           src="/icons/WhatsApp-Green.svg"
           alt="иконка WhatsApp"
           class="social__icon"
-      /></a>
+      /></NuxtLink>
     </div>
   </section>
 </template>

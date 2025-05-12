@@ -1,5 +1,8 @@
 <template>
-  <section class="hero">
+  <section
+    class="hero"
+    id="hero"
+  >
     <div class="wrapper">
       <h1 class="hero__header header">3D Визуализатор</h1>
       <p class="hero__subheader">Кристина Виноградова</p>

@@ -1,61 +1,63 @@
 <template>
   <footer>
     <div class="row">
-      <div class="logo row__column"><a href="/">Kristy V.</a></div>
+      <div class="logo row__column">
+        <NuxtLink :to="{ path: '/', hash: '#hero' }">Kristy V.</NuxtLink>
+      </div>
       <div class="socials row__column">
-        <a href="#"
+        <NuxtLink to="#"
           ><img
             src="/icons/Telegram_footer.svg"
             alt="иконка Telegram"
             class="socials__icon"
-        /></a>
-        <a href="#"
+        /></NuxtLink>
+        <NuxtLink to="#"
           ><img
             src="/icons/VK_footer.svg"
             alt="иконка вконтакте"
             class="socials__icon"
-        /></a>
-        <a href="#"
+        /></NuxtLink>
+        <NuxtLink to="#"
           ><img
             src="/icons/Email_footer.svg"
             alt="иконка Email"
             class="socials__icon"
-        /></a>
-        <a href="#"
+        /></NuxtLink>
+        <NuxtLink to="#"
           ><img
             src="/icons/WhatsApp_footer.svg"
             alt="иконка WhatsApp"
             class="socials__icon"
-        /></a>
+        /></NuxtLink>
       </div>
     </div>
     <div class="row">
       <p class="copyright row__column">Кристина Виноградова © 2025</p>
       <div class="menu row__column">
-        <a
+        <NuxtLink
           class="menu__item"
-          href="/"
-          >Главная</a
+          :to="{ path: '/', hash: '#hero' }"
+          >Главная</NuxtLink
         >
-        <a
+        <NuxtLink
           class="menu__item"
-          href="/portfolio"
-          >Портфолио</a
+          to="/portfolio"
+          >Портфолио</NuxtLink
         >
-        <a
+        <NuxtLink
           class="menu__item"
-          href="/conditions"
-          >Условия</a
+          to="/conditions"
+          >Условия</NuxtLink
         >
-        <a
+        <NuxtLink
           class="menu__item"
-          href="/payment"
-          >Оплата</a
+          to="/payment"
+          >Оплата</NuxtLink
         >
-        <a
+        <NuxtLink
           class="menu__item"
-          href="/contacts"
-          >Контакты</a
+          to="/contacts"
+          >Контакты</NuxtLink
         >
       </div>
     </div>

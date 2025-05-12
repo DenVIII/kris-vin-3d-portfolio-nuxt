@@ -2,10 +2,10 @@
   <section class="not-found">
     <h2 class="not-found__header">Упс, что-то пошло не так ;(</h2>
     <p class="not-found__text">Страница по этому адресу не найдена...</p>
-    <a
-      href="/"
+    <NuxtLink
+      to="/"
       class="not-found__ref"
-      >Нажмите сюда, чтобы перейти на главную.</a
+      >Нажмите сюда, чтобы перейти на главную.</NuxtLink
     >
   </section>
 </template>

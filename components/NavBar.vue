@@ -1,17 +1,17 @@
 <template>
   <nav class="navbar">
-    <a
-      href="/"
+    <NuxtLink
+      :to="{ path: '/', hash: '#hero' }"
       class="navbar__logo"
-      >Kristy V.</a
+      >Kristy V.</NuxtLink
     >
     <div class="navbar__items">
-      <a
+      <NuxtLink
         class="navbar__item"
         v-for="(route, index) in routes"
-        :href="route.ref"
+        :to="route.ref"
         :key="index"
-        >{{ route.name }}</a
+        >{{ route.name }}</NuxtLink
       >
     </div>
     <dropdown-menu
@@ -30,10 +30,10 @@
             v-for="(route, index) in routes"
             :key="index"
           >
-            <a
+            <NuxtLink
               class="navbar__item"
-              :href="route.ref"
-              >{{ route.name }}</a
+              :to="route.ref"
+              >{{ route.name }}</NuxtLink
             >
           </li>
         </ul>
