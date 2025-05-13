@@ -5,49 +5,36 @@
       <span class="caption__descr">{{ description }}</span>
     </p>
     <div class="wrapper">
-      <vueper-slides
-        class="no-shadow"
-        arrows-outside
-        bullets-outside
-        :slide-ratio="2 / 3"
-        :breakpoints="breakpoints"
+      <Splide
+        :options="{ rewind: true }"
+        aria-label="project"
       >
-        <vueper-slide
+        <SplideSlide
           v-for="(slide, i) in slides"
           :key="i"
-          :title="slide.title"
-          :image="slide.imageSrc"
-          :class="'slide'"
-        ></vueper-slide>
-      </vueper-slides>
+        >
+          <img
+            :src="slide.imageSrc"
+            :alt="`Слайд №${key}`"
+          />
+        </SplideSlide>
+      </Splide>
     </div>
     <div class="border"></div>
   </div>
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from "vueperslides";
-import "vueperslides/dist/vueperslides.css";
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
+import "@splidejs/vue-splide/css";
 
 export default {
   name: "ProjectSlider",
   props: ["title", "description", "slides"],
   components: {
-    VueperSlides,
-    VueperSlide,
+    Splide,
+    SplideSlide,
   },
-  data: () => ({
-    breakpoints: {
-      1024: {
-        arrowsOutside: false,
-        arrows: true,
-      },
-      600: {
-        slideRatio: 1,
-        arrows: false,
-      },
-    },
-  }),
 };
 </script>
 
