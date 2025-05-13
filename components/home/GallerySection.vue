@@ -2,46 +2,36 @@
   <section class="gallery">
     <h2 class="header gallery__header">Некоторые из моих работ:</h2>
     <div class="wrapper">
-      <vueper-slides
-        arrows-outside
-        bullets-outside
-        :slide-ratio="2 / 3"
-        :breakpoints="breakpoints"
+      <Splide
+        :options="{ rewind: true }"
+        aria-label="My Favorite Images"
       >
-        <vueper-slide
+        <SplideSlide
           v-for="(slide, i) in slides"
           :key="i"
-          :title="slide.title"
-          :image="slide.imageSrc"
-        ></vueper-slide>
-      </vueper-slides>
+        >
+          <img
+            :src="slide.imageSrc"
+            :alt="`Слайд №${key}`"
+          />
+        </SplideSlide>
+      </Splide>
     </div>
   </section>
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from "vueperslides";
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import "vueperslides/dist/vueperslides.css";
+import "@splidejs/vue-splide/css";
 
 export default {
   name: "GallerySection",
   props: ["slides"],
   components: {
-    VueperSlides,
-    VueperSlide,
+    Splide,
+    SplideSlide,
   },
-  data: () => ({
-    breakpoints: {
-      1024: {
-        arrowsOutside: false,
-        arrows: true,
-      },
-      600: {
-        slideRatio: 1,
-        arrows: false,
-      },
-    },
-  }),
 };
 </script>
 
@@ -73,6 +63,15 @@ export default {
   &__bullets {
     color: $color-dark;
   }
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.splide__pagination {
+  bottom: 1.5em;
 }
 
 @media (max-width: 1024px) {

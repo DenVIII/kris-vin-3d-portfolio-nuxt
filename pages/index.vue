@@ -8,7 +8,7 @@
 
 <script>
 import AboutSection from "@/components/home/AboutSection.vue";
-import GallerySection from "@/components/GallerySection.vue";
+import GallerySection from "~/components/home/GallerySection.vue";
 import HeroSection from "@/components/home/HeroSection.vue";
 import IdeaSection from "@/components/home/IdeaSection.vue";
 import MyContactsSection from "@/components/home/MyContactsSection.vue";

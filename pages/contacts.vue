@@ -4,31 +4,31 @@
       <h2 class="intro__header intro__header_title">Мои контактные данные:</h2>
       <div class="intro__details">
         <h3 class="details__header">Мой электронный адрес:</h3>
-        <a
-          href="#"
+        <NuxtLink
+          to="#"
           class="details__email"
-          >example@mail.ru</a
+          >example@mail.ru</NuxtLink
         >
         <h3 class="details__header">И мои социальные сети:</h3>
         <div class="details__social">
-          <a href="#"
+          <NuxtLink to="#"
             ><img
               src="/icons/Telegram.svg"
               alt="иконка Telegram"
               class="social__icon"
-          /></a>
-          <a href="#"
+          /></NuxtLink>
+          <NuxtLink to="#"
             ><img
               src="/icons/VK-Logo.svg"
               alt="иконка вконтакте"
               class="social__icon"
-          /></a>
-          <a href="#"
+          /></NuxtLink>
+          <NuxtLink to="#"
             ><img
               src="/icons/WhatsApp-Green.svg"
               alt="иконка WhatsApp"
               class="social__icon"
-          /></a>
+          /></NuxtLink>
         </div>
       </div>
     </section>
