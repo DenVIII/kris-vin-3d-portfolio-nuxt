@@ -46,7 +46,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 0 30px 0;
+  padding-top: 50px;
   &__caption {
     font-family: $font-family-text;
     margin-bottom: 30px;
@@ -62,7 +62,7 @@ export default {
 }
 
 .border {
-  margin-top: 10px;
+  margin-top: 40px;
   width: 50%;
   height: 4px;
   border-radius: 100%;

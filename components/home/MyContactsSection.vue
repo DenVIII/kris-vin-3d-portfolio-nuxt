@@ -68,8 +68,8 @@
   overflow: hidden;
 
   &__icon {
-    width: 75px;
-    height: 75px;
+    width: 64px;
+    height: 64px;
     border-radius: 10px;
     cursor: pointer;
     transition: all ease-in-out 500ms;
@@ -82,6 +82,9 @@
 @media (max-width: 500px) {
   .my-contacts {
     padding: 20px;
+    &__subheader {
+      font-size: 1.25rem;
+    }
   }
   .social {
     gap: 15px;

@@ -22,7 +22,6 @@
 
 <script>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
-import "vueperslides/dist/vueperslides.css";
 import "@splidejs/vue-splide/css";
 
 export default {
@@ -48,7 +47,7 @@ export default {
   background-color: $color-primary;
   &__header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   .wrapper {
     width: 900px;
@@ -85,6 +84,10 @@ export default {
 @media (max-width: 800px) {
   .gallery {
     padding: 40px 0;
+    &__header.header {
+      padding: 0;
+      margin-bottom: 40px;
+    }
   }
 }
 

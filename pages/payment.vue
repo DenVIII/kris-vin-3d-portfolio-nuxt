@@ -156,7 +156,7 @@
   margin: 0 auto 40px auto;
   &__header {
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px;
     grid-area: 1 / 1 / 2 / 3;
   }
 }

@@ -104,6 +104,21 @@
   margin: 10px;
 }
 
+@media (max-width: 800px) {
+  .intro {
+    padding: 20px 0;
+    &__details {
+      padding: 20px;
+    }
+  }
+  .social {
+    &__icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .intro {
     &__header {

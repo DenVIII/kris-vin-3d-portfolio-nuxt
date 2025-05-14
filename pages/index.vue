@@ -106,8 +106,12 @@ p {
 }
 
 @media (max-width: 500px) {
-  h2 {
-    font-size: 1.5rem;
+  h2,
+  .header {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 </style>

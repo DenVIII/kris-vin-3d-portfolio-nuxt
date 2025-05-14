@@ -61,8 +61,8 @@
 @media (max-width: 600px) {
   .hero {
     background-attachment: scroll;
-    &__header {
-      font-size: 2rem;
+    &__header.header {
+      font-size: 1.75rem;
     }
     &__subheader {
       font-size: 1rem;

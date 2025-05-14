@@ -55,14 +55,14 @@
 
 .about {
   min-height: 100vh;
-  padding: 40px 0;
+  padding-bottom: 40px;
   .wrapper {
     position: relative;
     min-height: 500px;
   }
   &__header {
     text-align: center;
-    margin-bottom: 40px;
+    padding: 40px 0;
   }
   &__content,
   &__image {
@@ -134,11 +134,12 @@
   .about {
     margin: 0 auto;
     width: 100%;
-    padding: 20px 40px;
+    padding: 0 40px;
     .wrapper {
       margin: 0 auto;
     }
     &__content {
+      padding: 20px 30px;
       margin-top: 0;
       width: 100%;
       height: auto;
@@ -148,9 +149,6 @@
       margin-top: 20px;
       width: 100%;
       height: auto;
-    }
-    &__header {
-      margin-bottom: 20px;
     }
     &__caption:last-of-type {
       display: flex;
