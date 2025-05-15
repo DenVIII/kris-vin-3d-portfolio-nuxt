@@ -116,6 +116,7 @@
   .about {
     margin: 0 auto;
     width: 768px;
+    min-height: auto;
     &__content {
       position: static;
     }

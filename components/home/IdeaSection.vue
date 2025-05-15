@@ -53,7 +53,7 @@ export default {
   outline: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .idea {
     min-height: auto;
   }

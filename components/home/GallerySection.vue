@@ -75,6 +75,10 @@ export default {
 
 @media (max-width: 1024px) {
   .gallery {
+    min-height: auto;
+    &__header {
+      margin-bottom: 50px;
+    }
     .wrapper {
       width: 100%;
     }
@@ -85,8 +89,7 @@ export default {
   .gallery {
     padding: 40px 0;
     &__header.header {
-      padding: 0;
-      margin-bottom: 40px;
+      padding: 20px 0;
     }
   }
 }
