@@ -15,7 +15,7 @@
             :sizes="sizesConfig"
             :modifiers="{
               fit: 'cover',
-              quality: 40,
+              quality: 80,
               dpr: [1, 2],
             }"
             alt="Слайд"

@@ -19,36 +19,69 @@
           <b>3Ds Max / Corona Renderer / V-Ray / Adobe Photoshop</b>
         </p>
         <div class="icons">
-          <img
+          <NuxtImg
             src="/icons/3ds-Max.svg"
             alt="3Ds Max"
             class="icon"
+            width="48"
+            height="48"
           />
-          <img
+          <NuxtImg
             src="/icons/Chaos-Corona-01.svg"
-            alt="3Ds Max"
+            alt="Corona"
             class="icon"
+            width="48"
+            height="48"
           />
-          <img
+          <NuxtImg
             src="/icons/V-Ray.svg"
-            alt="3Ds Max"
+            alt="V-Ray"
             class="icon"
+            width="48"
+            height="48"
           />
-          <img
+          <NuxtImg
             src="/icons/Adobe-Photoshop.svg"
-            alt="3Ds Max"
+            alt="Photoshop"
             class="icon"
+            width="48"
+            height="48"
           />
         </div>
       </div>
-      <img
+      <NuxtPicture
+        :sizes="sizesConfig"
+        :modifiers="{
+          fit: 'cover',
+          quality: 80,
+          dpr: [1, 2],
+        }"
+        :img-attrs="{ style: 'aspect-ratio: 3/2;' }"
         src="/img/close-up-1.jpg"
         alt="Пример работы: близкое изображение цветка перед загородным домом"
+        loading="lazy"
         class="about__image"
       />
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  name: "AboutSection",
+  data: () => ({
+    sizesConfig: {
+      // 100vw на всех экранах + кастомные брейкпоинты
+      xs: "90vw",
+      sm: "90vw",
+      md: "400px",
+      lg: "600px",
+      xl: "600px",
+      xxl: "900px",
+    },
+  }),
+};
+</script>
 
 <style lang="scss">
 @use "@/assets/scss/variables" as *;
@@ -96,8 +129,7 @@
     position: absolute;
     top: 0%;
     right: 10%;
-    width: 600px;
-    height: 400px;
+    aspect-ratio: 2/3;
     border-radius: 20px;
     z-index: -1;
   }
@@ -106,8 +138,6 @@
   display: flex;
   gap: 10px;
   .icon {
-    width: 50px;
-    height: 50px;
     border-radius: 8px;
   }
 }
@@ -135,19 +165,19 @@
   .about {
     margin: 0 auto;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 5vw;
     .wrapper {
       margin: 0 auto;
     }
     &__content {
       padding: 20px 30px;
       margin-top: 0;
+      margin-bottom: 20px;
       width: 100%;
       height: auto;
     }
     &__image {
       position: static;
-      margin-top: 20px;
       width: 100%;
       height: auto;
     }
