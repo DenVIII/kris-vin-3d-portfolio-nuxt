@@ -10,9 +10,17 @@
           v-for="(slide, i) in slides"
           :key="i"
         >
-          <img
+          <NuxtPicture
             :src="slide.imageSrc"
-            :alt="`Слайд №${key}`"
+            :sizes="sizesConfig"
+            :modifiers="{
+              fit: 'cover',
+              quality: 40,
+              dpr: [1, 2],
+            }"
+            alt="Слайд"
+            loading="lazy"
+            class="gallery__slide"
           />
         </SplideSlide>
       </Splide>
@@ -31,6 +39,17 @@ export default {
     Splide,
     SplideSlide,
   },
+  data: () => ({
+    sizesConfig: {
+      // 100vw на всех экранах + кастомные брейкпоинты
+      xs: "100vw",
+      sm: "100vw",
+      md: "100vw",
+      lg: "900px",
+      xl: "900px",
+      xxl: "1200px",
+    },
+  }),
 };
 </script>
 
@@ -51,6 +70,12 @@ export default {
   }
   .wrapper {
     width: 900px;
+  }
+  &__slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
   }
 }
 
