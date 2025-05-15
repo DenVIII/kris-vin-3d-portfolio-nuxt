@@ -3,15 +3,30 @@
     <h2 class="header idea__header">От идеи до реализации:</h2>
     <ImgComparisonSlider class="slider idea__slider">
       <!-- eslint-disable -->
-      <img
+      <NuxtPicture
         slot="first"
-        class="slider__img first_img"
         src="/img/placeholder-1.jpg"
+        :sizes="sizesConfig"
+        :modifiers="{
+          fit: 'cover',
+          quality: 40,
+          dpr: [1, 2],
+        }"
+        loading="lazy"
+        class="slider__img first_img"
       />
-      <img
+      <NuxtPicture
         slot="second"
-        class="slider__img second_img"
         src="/img/1.jpg"
+        :sizes="sizesConfig"
+        :modifiers="{
+          fit: 'cover',
+          quality: 40,
+          dpr: [1, 2],
+        }"
+        alt="Слайд"
+        loading="lazy"
+        class="slider__img second_img"
       />
       <!-- eslint-enable -->
     </ImgComparisonSlider>
@@ -26,6 +41,17 @@ export default {
   components: {
     ImgComparisonSlider,
   },
+  data: () => ({
+    sizesConfig: {
+      // 100vw на всех экранах + кастомные брейкпоинты
+      xs: "100vw",
+      sm: "100vw",
+      md: "100vw",
+      lg: "100vw",
+      xl: "100vw",
+      xxl: "100vw",
+    },
+  }),
 };
 </script>
 
