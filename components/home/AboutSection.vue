@@ -71,7 +71,6 @@ export default {
   name: "AboutSection",
   data: () => ({
     sizesConfig: {
-      // 100vw на всех экранах + кастомные брейкпоинты
       xs: "90vw",
       sm: "90vw",
       md: "400px",

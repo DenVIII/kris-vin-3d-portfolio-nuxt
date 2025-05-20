@@ -13,9 +13,16 @@
           v-for="(slide, i) in slides"
           :key="i"
         >
-          <img
+          <NuxtPicture
             :src="slide.imageSrc"
-            :alt="`Слайд №${key}`"
+            :sizes="sizesConfig"
+            :modifiers="{
+              fit: 'cover',
+              quality: 80,
+              dpr: [1, 2],
+            }"
+            alt="Слайд"
+            loading="lazy"
           />
         </SplideSlide>
       </Splide>
@@ -35,6 +42,16 @@ export default {
     Splide,
     SplideSlide,
   },
+  data: () => ({
+    sizesConfig: {
+      xs: "100vw",
+      sm: "100vw",
+      md: "100vw",
+      lg: "900px",
+      xl: "900px",
+      xxl: "1200px",
+    },
+  }),
 };
 </script>
 

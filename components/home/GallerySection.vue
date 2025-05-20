@@ -41,7 +41,6 @@ export default {
   },
   data: () => ({
     sizesConfig: {
-      // 100vw на всех экранах + кастомные брейкпоинты
       xs: "100vw",
       sm: "100vw",
       md: "100vw",
