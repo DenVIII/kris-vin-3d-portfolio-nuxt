@@ -2,6 +2,7 @@
   <section
     class="hero"
     id="hero"
+    :style="backgroundStyles"
   >
     <div class="wrapper">
       <h1 class="hero__header header">3D Визуализатор</h1>
@@ -11,6 +12,17 @@
   </section>
 </template>
 
+<script setup>
+const img = useImage();
+
+const backgroundStyles = computed(() => {
+  const imgUrl = img("/img/1.jpg");
+  return {
+    background: `url('${imgUrl}') center/cover no-repeat fixed `,
+  };
+});
+</script>
+
 <style lang="scss">
 @use "@/assets/scss/variables" as *;
 
@@ -19,13 +31,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: no-repeat center url("/img/1.jpg");
   height: 100vh;
 
-  // Параллакс эффект
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   &::before {
     content: "";
     position: absolute;
@@ -60,7 +67,6 @@
 
 @media (max-width: 600px) {
   .hero {
-    background-attachment: scroll;
     &__header.header {
       font-size: 1.75rem;
     }
