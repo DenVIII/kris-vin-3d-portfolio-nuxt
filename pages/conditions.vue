@@ -1,7 +1,10 @@
 <template>
   <div class="conditions conditions__block">
     <h2 class="conditions__header conditions__header_text">Условия</h2>
-    <section class="intro conditions__intro">
+    <section
+      class="intro conditions__intro"
+      :style="backgroundStyles"
+    >
       <h2 class="intro__header intro__header_title">Визуализация интерьера</h2>
     </section>
     <section class="conditions__content conditions__content_wrapper">
@@ -174,6 +177,17 @@
   </div>
 </template>
 
+<script setup>
+const img = useImage();
+
+const backgroundStyles = computed(() => {
+  const imgUrl = img("/img/3.jpg");
+  return {
+    background: `url('${imgUrl}') center/cover no-repeat fixed `,
+  };
+});
+</script>
+
 <style lang="scss" scoped>
 @use "@/assets/scss/variables" as *;
 
@@ -195,13 +209,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: no-repeat center url("/img/3.jpg");
   height: 85vh;
 
-  // Параллакс эффект
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   &::before {
     content: "";
     position: absolute;
