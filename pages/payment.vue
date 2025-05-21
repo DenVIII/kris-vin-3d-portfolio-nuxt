@@ -1,7 +1,10 @@
 <template>
   <div class="payment">
     <h2 class="payment__header payment__header_text">Оплата</h2>
-    <section class="intro payment__intro">
+    <section
+      class="intro payment__intro"
+      :style="backgroundStyles"
+    >
       <h2 class="intro__header intro__header_title">Цена и условия оплаты</h2>
       <p class="intro__caption">
         Стоимость визуализации начинается от
@@ -92,6 +95,17 @@
   </div>
 </template>
 
+<script setup>
+const img = useImage();
+
+const backgroundStyles = computed(() => {
+  const imgUrl = img("/img/2.jpg");
+  return {
+    background: `url('${imgUrl}') center/cover no-repeat fixed `,
+  };
+});
+</script>
+
 <style lang="scss" scoped>
 @use "@/assets/scss/variables" as *;
 
@@ -112,13 +126,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: no-repeat center url("/img/2.jpg");
   height: 85vh;
 
-  // Параллакс эффект
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   &::before {
     content: "";
     position: absolute;
