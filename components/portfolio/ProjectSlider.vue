@@ -1,34 +1,36 @@
 <template>
-  <div class="project">
-    <p class="project__caption">
-      <span class="caption__title">{{ title }}</span>
-      <span class="caption__descr">{{ description }}</span>
-    </p>
-    <div class="wrapper">
-      <Splide
-        :options="{ rewind: true }"
-        aria-label="project"
-      >
-        <SplideSlide
-          v-for="(slide, i) in slides"
-          :key="i"
+  <ClientOnly>
+    <div class="project">
+      <p class="project__caption">
+        <span class="caption__title">{{ title }}</span>
+        <span class="caption__descr">{{ description }}</span>
+      </p>
+      <div class="wrapper">
+        <Splide
+          :options="{ rewind: true }"
+          aria-label="project"
         >
-          <NuxtPicture
-            :src="slide.imageSrc"
-            :sizes="sizesConfig"
-            :modifiers="{
-              fit: 'cover',
-              quality: 80,
-              dpr: [1, 2],
-            }"
-            alt="Слайд"
-            loading="lazy"
-          />
-        </SplideSlide>
-      </Splide>
+          <SplideSlide
+            v-for="(slide, i) in slides"
+            :key="i"
+          >
+            <NuxtPicture
+              :src="slide.imageSrc"
+              :sizes="sizesConfig"
+              :modifiers="{
+                fit: 'cover',
+                quality: 80,
+                dpr: [1, 2],
+              }"
+              alt="Слайд"
+              loading="lazy"
+            />
+          </SplideSlide>
+        </Splide>
+      </div>
+      <div class="border"></div>
     </div>
-    <div class="border"></div>
-  </div>
+  </ClientOnly>
 </template>
 
 <script>
