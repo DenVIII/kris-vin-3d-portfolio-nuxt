@@ -1,6 +1,9 @@
 <template>
   <div class="contacts contacts__block">
-    <section class="intro contacts__intro">
+    <section
+      class="intro contacts__intro"
+      :style="backgroundStyles"
+    >
       <h2 class="intro__header intro__header_title">Мои контактные данные:</h2>
       <div class="intro__details">
         <h3 class="details__header">Мой электронный адрес:</h3>
@@ -35,6 +38,17 @@
   </div>
 </template>
 
+<script setup>
+const img = useImage();
+
+const backgroundStyles = computed(() => {
+  const imgUrl = img("/img/2.jpg");
+  return {
+    background: `url('${imgUrl}') center/cover no-repeat fixed `,
+  };
+});
+</script>
+
 <style lang="scss" scoped>
 @use "@/assets/scss/variables" as *;
 
@@ -51,13 +65,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: no-repeat center url("/img/2.jpg");
   height: 100vh;
 
-  // Параллакс эффект
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
   &::before {
     content: "";
     position: absolute;
