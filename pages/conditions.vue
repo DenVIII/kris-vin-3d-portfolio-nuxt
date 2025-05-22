@@ -3,7 +3,7 @@
     <h2 class="conditions__header conditions__header_text">Условия</h2>
     <section
       class="intro conditions__intro"
-      :style="backgroundStyles"
+      :style="`background-image: url(${bgUrl})`"
     >
       <h2 class="intro__header intro__header_title">Визуализация интерьера</h2>
     </section>
@@ -180,11 +180,8 @@
 <script setup>
 const img = useImage();
 
-const backgroundStyles = computed(() => {
-  const imgUrl = img("/img/3.jpg");
-  return {
-    background: `url('${imgUrl}') center/cover no-repeat fixed `,
-  };
+const bgUrl = computed(() => {
+  return img("/img/3.jpg");
 });
 </script>
 
@@ -210,7 +207,10 @@ p {
   justify-content: center;
   align-items: center;
   height: 85vh;
-
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   &::before {
     content: "";
     position: absolute;
@@ -376,6 +376,9 @@ p {
 }
 
 @media (max-width: 500px) {
+  .intro {
+    background-attachment: scroll;
+  }
   .conditions {
     &__content {
       padding: 20px 0;
