@@ -14,32 +14,34 @@
         >{{ route.name }}</NuxtLink
       >
     </div>
-    <dropdown-menu
-      direction="center"
-      class="navbar__items mobile"
-    >
-      <template #trigger>
-        <button class="navbar__btn">Меню</button>
-      </template>
+    <ClientOnly>
+      <dropdown-menu
+        direction="center"
+        class="navbar__items mobile"
+      >
+        <template #trigger>
+          <button class="navbar__btn">Меню</button>
+        </template>
 
-      <template #header></template>
-      <template #body>
-        <ul>
-          <li
-            class="navbar__item"
-            v-for="(route, index) in routes"
-            :key="index"
-          >
-            <NuxtLink
+        <template #header></template>
+        <template #body>
+          <ul>
+            <li
               class="navbar__item"
-              :to="route.ref"
-              >{{ route.name }}</NuxtLink
+              v-for="(route, index) in routes"
+              :key="index"
             >
-          </li>
-        </ul>
-      </template>
-      <template #footer></template>
-    </dropdown-menu>
+              <NuxtLink
+                class="navbar__item"
+                :to="route.ref"
+                >{{ route.name }}</NuxtLink
+              >
+            </li>
+          </ul>
+        </template>
+        <template #footer></template>
+      </dropdown-menu>
+    </ClientOnly>
   </nav>
 </template>
 
