@@ -2,7 +2,7 @@
   <section
     class="hero"
     id="hero"
-    :style="backgroundStyles"
+    :style="`background-image: url(${bgUrl})`"
   >
     <div class="wrapper">
       <h1 class="hero__header header">3D Визуализатор</h1>
@@ -15,11 +15,8 @@
 <script setup>
 const img = useImage();
 
-const backgroundStyles = computed(() => {
-  const imgUrl = img("/img/1.jpg");
-  return {
-    background: `url('${imgUrl}') center/cover no-repeat fixed `,
-  };
+const bgUrl = computed(() => {
+  return img("/img/1.jpg");
 });
 </script>
 
@@ -33,6 +30,10 @@ const backgroundStyles = computed(() => {
   align-items: center;
   height: 100vh;
 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   &::before {
     content: "";
     position: absolute;
@@ -67,6 +68,7 @@ const backgroundStyles = computed(() => {
 
 @media (max-width: 600px) {
   .hero {
+    background-attachment: scroll;
     &__header.header {
       font-size: 1.75rem;
     }

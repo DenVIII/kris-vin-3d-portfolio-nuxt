@@ -250,7 +250,6 @@ p {
   }
   &__image {
     position: absolute;
-    background: no-repeat center url("/img/1.jpg");
     bottom: 0%;
     right: -5%;
     height: 420px;
