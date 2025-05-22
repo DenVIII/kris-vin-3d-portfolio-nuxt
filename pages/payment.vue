@@ -3,7 +3,7 @@
     <h2 class="payment__header payment__header_text">Оплата</h2>
     <section
       class="intro payment__intro"
-      :style="backgroundStyles"
+      :style="`background-image: url(${bgUrl})`"
     >
       <h2 class="intro__header intro__header_title">Цена и условия оплаты</h2>
       <p class="intro__caption">
@@ -98,11 +98,8 @@
 <script setup>
 const img = useImage();
 
-const backgroundStyles = computed(() => {
-  const imgUrl = img("/img/2.jpg");
-  return {
-    background: `url('${imgUrl}') center/cover no-repeat fixed `,
-  };
+const bgUrl = computed(() => {
+  return img("/img/3.jpg");
 });
 </script>
 
@@ -127,7 +124,10 @@ const backgroundStyles = computed(() => {
   justify-content: center;
   align-items: center;
   height: 85vh;
-
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   &::before {
     content: "";
     position: absolute;
@@ -220,6 +220,7 @@ const backgroundStyles = computed(() => {
   }
 
   .intro {
+    background-attachment: scroll;
     &__header {
       font-size: 1.5rem;
     }
