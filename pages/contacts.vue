@@ -2,7 +2,7 @@
   <div class="contacts contacts__block">
     <section
       class="intro contacts__intro"
-      :style="backgroundStyles"
+      :style="`background-image: url(${bgUrl})`"
     >
       <h2 class="intro__header intro__header_title">Мои контактные данные:</h2>
       <div class="intro__details">
@@ -41,11 +41,8 @@
 <script setup>
 const img = useImage();
 
-const backgroundStyles = computed(() => {
-  const imgUrl = img("/img/2.jpg");
-  return {
-    background: `url('${imgUrl}') center/cover no-repeat fixed `,
-  };
+const bgUrl = computed(() => {
+  return img("/img/2.jpg");
 });
 </script>
 
@@ -66,7 +63,10 @@ const backgroundStyles = computed(() => {
   justify-content: center;
   align-items: center;
   height: 100vh;
-
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   &::before {
     content: "";
     position: absolute;
@@ -130,6 +130,7 @@ const backgroundStyles = computed(() => {
 
 @media (max-width: 500px) {
   .intro {
+    background-attachment: scroll;
     &__header {
       display: none;
     }
