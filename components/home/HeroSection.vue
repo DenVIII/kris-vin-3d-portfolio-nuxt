@@ -16,7 +16,7 @@
 const img = useImage();
 
 const bgUrl = computed(() => {
-  return img("/img/1.jpg");
+  return img("/img/Library-day.Cam001F.jpg");
 });
 </script>
 

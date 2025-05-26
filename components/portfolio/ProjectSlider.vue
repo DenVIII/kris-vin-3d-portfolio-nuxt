@@ -24,6 +24,7 @@
               }"
               alt="Слайд"
               loading="lazy"
+              class="project__slide"
             />
           </SplideSlide>
         </Splide>
@@ -70,6 +71,10 @@ export default {
     font-family: $font-family-text;
     margin-bottom: 30px;
   }
+  &__slide img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+  }
   .wrapper {
     width: 900px;
   }
@@ -88,14 +93,17 @@ export default {
   background-color: #b8b4b433;
 }
 
-.vueperslides {
-  &__arrow {
-    color: $color-dark;
+.splide {
+  &__slide {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
   }
-  &__bullet:hover,
-  &__bullet:focus,
-  &__arrow:hover {
-    color: $color-accent;
+  &__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 }
 

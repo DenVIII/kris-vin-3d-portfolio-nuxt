@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   modules: ["@nuxt/content", "@nuxt/image"],
+
   css: ["@/assets/scss/main.scss"],
   components: {
     global: true,
@@ -21,6 +22,9 @@ export default defineNuxtConfig({
     head: {
       title: "3D Exterior Portfolio",
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      htmlAttrs: {
+        lang: "ru",
+      },
     },
   },
 });

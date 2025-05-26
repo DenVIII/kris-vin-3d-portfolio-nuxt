@@ -13,9 +13,12 @@ import HeroSection from "@/components/home/HeroSection.vue";
 import IdeaSection from "@/components/home/IdeaSection.vue";
 import MyContactsSection from "@/components/home/MyContactsSection.vue";
 
-import image1 from "/img/1.jpg";
-import image2 from "/img/2.jpg";
-import image3 from "/img/3.jpg";
+import image1 from "/img/Modern-house-day-HDR.Cam009.jpg";
+import image2 from "/img/Modern-house-day.Cam008.jpg";
+import image3 from "/img/Library-day.Cam002.jpg";
+import image4 from "/img/Library-day.Cam001F.jpg";
+import image5 from "/img/House-forest.Cam001.jpg";
+import image6 from "/img/House-forest.Cam005.jpg";
 
 export default {
   name: "HomeView",
@@ -39,6 +42,18 @@ export default {
       {
         id: "slide-3",
         imageSrc: image3,
+      },
+      {
+        id: "slide-4",
+        imageSrc: image4,
+      },
+      {
+        id: "slide-5",
+        imageSrc: image5,
+      },
+      {
+        id: "slide-6",
+        imageSrc: image6,
       },
     ],
   }),

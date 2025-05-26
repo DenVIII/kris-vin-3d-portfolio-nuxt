@@ -4,19 +4,23 @@
     <div class="wrapper">
       <div class="about__content">
         <p class="about__caption">
-          Занимаюсь 3D-визуализацией жилых интерьеров. Разрабатываю композицию
-          кадра и освещение, подбираю декор для передачи объема и атмосферы
-          пространства.
+          Специализируюсь на фотореалистичной визуализации архитектурных
+          объектов и ландшафтов. Создаю детализированные 3D-рендеры фасадов,
+          коттеджей и территорий, точно передавая материалы и взаимодействие с
+          окружающей средой.
         </p>
         <p class="about__caption">
-          Со мной вы получите качественную визуализацию концепции в
-          согласованном световом сценарии точно в срок. Если у вас есть вопросы
-          или хотите обсудить проект, свяжитесь со мной — я всегда на связи.
+          Мои работы позволяют оценить дизайн экстерьера до начала
+          строительства, экспериментировать с отделкой и ландшафтным
+          оформлением. Все проекты выполняются в срок с учетом технических
+          требований и ваших пожеланий.
         </p>
         <p class="about__caption">
-          Использую следующие инструменты:
+          В своей работе я использую следующие инструменты:
           <br />
-          <b>3Ds Max / Corona Renderer / V-Ray / Adobe Photoshop</b>
+        </p>
+        <p class="about__skills">
+          3Ds Max / Corona Renderer / Adobe Photoshop / V-Ray
         </p>
         <div class="icons">
           <NuxtImg
@@ -34,15 +38,15 @@
             height="48"
           />
           <NuxtImg
-            src="/icons/V-Ray.svg"
-            alt="V-Ray"
+            src="/icons/Adobe-Photoshop.svg"
+            alt="Photoshop"
             class="icon"
             width="48"
             height="48"
           />
           <NuxtImg
-            src="/icons/Adobe-Photoshop.svg"
-            alt="Photoshop"
+            src="/icons/V-Ray.svg"
+            alt="V-Ray"
             class="icon"
             width="48"
             height="48"
@@ -57,7 +61,7 @@
           dpr: [1, 2],
         }"
         :img-attrs="{ style: 'aspect-ratio: 3/2;' }"
-        src="/img/close-up-1.jpg"
+        src="/img/Modern-house-day-CloseUp.Cam014.jpg"
         alt="Пример работы: близкое изображение цветка перед загородным домом"
         loading="lazy"
         class="about__image"
@@ -116,11 +120,13 @@ export default {
     border-radius: 20px;
     width: 500px;
     height: 500px;
-    padding: 40px;
+    padding: 40px 30px;
   }
-  &__caption {
+  &__caption,
+  &__skills {
     text-indent: 2ch;
-    text-align: left;
+    text-align: justify;
+    hyphens: auto;
     color: $color-dark;
     font-family: $font-family-text;
   }
@@ -131,6 +137,9 @@ export default {
     aspect-ratio: 2/3;
     border-radius: 20px;
     z-index: -1;
+  }
+  &__skills {
+    font-weight: bold;
   }
 }
 .icons {
@@ -169,7 +178,7 @@ export default {
       margin: 0 auto;
     }
     &__content {
-      padding: 20px 30px;
+      padding: 30px;
       margin-top: 0;
       margin-bottom: 20px;
       width: 100%;
@@ -195,6 +204,9 @@ export default {
   .about {
     padding: 0 20px;
     min-height: auto;
+    &__content {
+      padding: 20px;
+    }
     &__header {
       margin-bottom: 0;
     }

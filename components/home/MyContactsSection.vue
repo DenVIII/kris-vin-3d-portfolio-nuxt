@@ -7,25 +7,25 @@
         class="social__icon"
         to="#"
         ><img
-          src="/icons/Telegram.svg"
+          src="/icons/Telegram_square.svg"
           alt="иконка Telegram"
           class="social__icon"
       /></NuxtLink>
       <NuxtLink to="#"
         ><img
-          src="/icons/VK-Logo.svg"
+          src="/icons/VK_square.svg"
           alt="иконка вконтакте"
           class="social__icon"
       /></NuxtLink>
       <NuxtLink to="#"
         ><img
-          src="/icons/Email_inverted.svg"
+          src="/icons/Email_square.svg"
           alt="иконка Email"
           class="social__icon"
       /></NuxtLink>
       <NuxtLink to="#"
         ><img
-          src="/icons/WhatsApp-Green.svg"
+          src="/icons/WhatsApp_square.svg"
           alt="иконка WhatsApp"
           class="social__icon"
       /></NuxtLink>

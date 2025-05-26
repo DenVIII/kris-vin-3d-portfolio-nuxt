@@ -17,7 +17,7 @@
       />
       <NuxtPicture
         slot="second"
-        src="/img/1.jpg"
+        src="/img/Modern-house-sunset.Cam012.jpg"
         :sizes="sizesConfig"
         :modifiers="{
           fit: 'cover',
