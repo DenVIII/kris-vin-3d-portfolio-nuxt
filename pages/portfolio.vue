@@ -6,14 +6,28 @@
     :title="project.title"
     :description="project.description"
     :slides="project.slides"
+    :verticalSlides="project.verticalSlides"
   ></project-slider>
 </template>
 
 <script>
 import ProjectSlider from "@/components/portfolio/ProjectSlider.vue";
-import image1 from "/img/1.jpg";
-import image2 from "/img/2.jpg";
-import image3 from "/img/3.jpg";
+import ModernHouseImg1 from "/img/Modern-house-day.Cam008.jpg";
+import ModernHouseImg2 from "/img/Modern-house-day-HDR.Cam009.jpg";
+import ModernHouseImg3 from "/img/Modern-house-day-HDR.Cam004.jpg";
+import ModernHouseImg4 from "/img/Modern-house-sunset.Cam012.jpg";
+import ModernHouseImg5 from "/img/Modern-house-sunset.Cam007.jpg";
+import ModernHouseImg6 from "/img/Modern-house-night.Cam006.jpg";
+import LibraryImg1 from "/img/Library-day.Cam001F.jpg";
+import LibraryImg2 from "/img/Library-day.Cam002.jpg";
+import LibraryImg3 from "/img/Library-night.Cam004.jpg";
+import LibraryImg4 from "/img/Library-sunset.Cam007.jpg";
+import LibraryImg5 from "/img/Library-day.Cam005.jpg";
+import ForestHouseImg1 from "/img/House-forest.Cam001.jpg";
+import ForestHouseImg2 from "/img/House-forest.Cam002.jpg";
+import ForestHouseImg3 from "/img/House-forest.Cam003.jpg";
+import ForestHouseImg4 from "/img/House-forest.Cam004.jpg";
+import ForestHouseImg5 from "/img/House-forest.Cam005.jpg";
 
 export default {
   name: "PortfolioView",
@@ -23,58 +37,91 @@ export default {
   data: () => ({
     projects: [
       {
-        title: "Гостинная. ",
-        description: "Проект гостинной в нордическом стиле. г.Севастополь.",
+        title: "Загородный дом. ",
+        description: "Проект загородного дома в стиле Лофт.",
         slides: [
           {
             id: "slide-1",
-            imageSrc: image1,
+            imageSrc: ModernHouseImg1,
           },
           {
             id: "slide-2",
-            imageSrc: image2,
+            imageSrc: ModernHouseImg2,
           },
           {
             id: "slide-3",
-            imageSrc: image3,
+            imageSrc: ModernHouseImg3,
+          },
+          {
+            id: "slide-4",
+            imageSrc: ModernHouseImg4,
+          },
+          {
+            id: "slide-5",
+            imageSrc: ModernHouseImg5,
+          },
+          {
+            id: "slide-6",
+            imageSrc: ModernHouseImg6,
+          },
+        ],
+        verticalSlides: false,
+      },
+      {
+        title: 'Конкурсная работа: "Калифорнийская библиотека". ',
+        description:
+          "Проект библиотеки в г. Калифорния. Работа заняла 1-е место.",
+        slides: [
+          {
+            id: "slide-1",
+            imageSrc: LibraryImg1,
+          },
+          {
+            id: "slide-2",
+            imageSrc: LibraryImg2,
+          },
+          {
+            id: "slide-3",
+            imageSrc: LibraryImg3,
+          },
+        ],
+        verticalSlides: [
+          {
+            id: "slide-4",
+            imageSrc: LibraryImg4,
+          },
+          {
+            id: "slide-5",
+            imageSrc: LibraryImg5,
           },
         ],
       },
       {
-        title: "Гостинная. ",
-        description: "Проект гостинной в нордическом стиле. г.Севастополь.",
+        title: "Домик в лесу. ",
+        description: "Концепт современного эко-жилища в хвойном лесу.",
         slides: [
           {
             id: "slide-1",
-            imageSrc: image2,
+            imageSrc: ForestHouseImg1,
           },
           {
             id: "slide-2",
-            imageSrc: image1,
+            imageSrc: ForestHouseImg2,
           },
           {
             id: "slide-3",
-            imageSrc: image3,
+            imageSrc: ForestHouseImg3,
+          },
+          {
+            id: "slide-4",
+            imageSrc: ForestHouseImg4,
+          },
+          {
+            id: "slide-5",
+            imageSrc: ForestHouseImg5,
           },
         ],
-      },
-      {
-        title: "Гостинная. ",
-        description: "Проект гостинной в нордическом стиле. г.Севастополь.",
-        slides: [
-          {
-            id: "slide-1",
-            imageSrc: image3,
-          },
-          {
-            id: "slide-2",
-            imageSrc: image1,
-          },
-          {
-            id: "slide-3",
-            imageSrc: image2,
-          },
-        ],
+        verticalSlides: false,
       },
     ],
   }),
