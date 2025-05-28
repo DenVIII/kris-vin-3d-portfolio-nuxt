@@ -42,7 +42,7 @@
 const img = useImage();
 
 const bgUrl = computed(() => {
-  return img("/img/2.jpg");
+  return img("/img/Modern-house-sunset.Cam012.jpg");
 });
 </script>
 
@@ -115,6 +115,7 @@ const bgUrl = computed(() => {
 
 @media (max-width: 820px) {
   .intro {
+    background-position-x: 20%;
     padding: 20px 0;
     &__details {
       padding: 20px;
