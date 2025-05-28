@@ -113,7 +113,7 @@ const bgUrl = computed(() => {
   margin: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .intro {
     padding: 20px 0;
     &__details {

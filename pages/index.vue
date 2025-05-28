@@ -114,7 +114,7 @@ p {
     transform 1.5s ease-in-out;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .header {
     padding: 20px 0;
   }

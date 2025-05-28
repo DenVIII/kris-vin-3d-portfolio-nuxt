@@ -7,9 +7,11 @@
     >
       <h2 class="intro__header intro__header_title">Цена и условия оплаты</h2>
       <p class="intro__caption">
-        Стоимость визуализации начинается от
-        <span class="highlight">700 р./м².</span> Точную цену я смогу назвать
-        после изучения вашего технического задания.
+        Стоимость одного ракурса - от
+        <span class="highlight">15 000 руб.</span><br /><br />Минимальное
+        количество ракурсов в одном проекте -
+        <span class="highlight">3 шт.</span><br /><br />Точную цену смогу
+        назвать после изучения вашего технического задания.
       </p>
     </section>
     <section class="payment__details details">
@@ -17,18 +19,17 @@
       <ul class="details__list list">
         <h3 class="list__subheader subheader">Что входит в стоимость:</h3>
         <li class="list__item item">
-          Сборка 3D-сцены и моделирование корпусной мебели на заказ (без сложной
-          фрезеровки, например, ровные кухонные фасады).
+          Создание 3D-модели здания с учетом архитектурных особенностей.
         </li>
         <li class="list__item item">
-          Настройка освещения и детальная проработка всех элементов интерьера.
+          Детальная проработка фасадов, материалов и окружающего ландшафта.
         </li>
         <li class="list__item item">
           Два круга правок:
           <ul class="list sub_list">
             <li class="list__item item sub_item">
               Первый — на этапе черновых рендеров (изменения в геометрии,
-              материалах, освещении и декоре).
+              материалах и освещении).
             </li>
             <li class="list__item item sub_item">
               Второй — после финальных рендеров.
@@ -36,59 +37,57 @@
           </ul>
         </li>
         <li class="list__item item">
-          Финальная обработка рендеров в Photoshop.
+          Финальная постобработка изображений в Photoshop.
         </li>
       </ul>
       <ul class="details__list list">
         <h3 class="list__subheader subheader">Дополнительные условия:</h3>
         <li class="list__item item">
-          <span class="highlight">3D-моделирование мебели: </span> Если нужной
-          модели мебели нет в библиотеке, стоимость ее создания обсуждается
-          отдельно.
+          <span class="highlight">3D-моделирование сложных элементов: </span>
+          Декоративные элементы, уникальные конструкции обсуждаются отдельно.
         </li>
         <li class="list__item item">
-          <span class="highlight">Техническое задание: </span>Для точного
-          расчета стоимости необходимо полное ТЗ, включающее планы помещений,
-          подборку текстур, ссылки на модели мебели и другие детали.
+          <span class="highlight">Техническое задание: </span>Необходимы чертежи
+          (генплан, фасады, разрезы) и референсы по материалам.
         </li>
         <li class="list__item item">
-          <span class="highlight">Дедлайны: </span>Срочные проекты оплачиваются
-          с наценкой от <span class="hightlight">30%</span>.
+          <span class="highlight">Срочные проекты: </span>Оплачиваются с
+          наценкой от <span class="highlight">30%</span>.
         </li>
         <li class="list__item item">
-          <span class="highlight">Разработка дизайна интерьера: </span>Если
-          требуется создание дизайн-проекта без чертежей (эскизный вариант),
-          стоимость составит от
-          <span class="highlight">2400 руб./кв.м.</span>
+          <span class="highlight">Ландшафтный дизайн: </span>Визуализация
+          прилегающей территории рассчитывается отдельно.
         </li>
       </ul>
       <ul class="details__list list">
-        <h3 class="list__subheader subheader">Габариты помещения:</h3>
+        <h3 class="list__subheader subheader">Типовые проекты:</h3>
         <li class="list__item item">
-          Для помещений <span class="highlight">до 10 м²</span> действует
-          фиксированная цена:
-          <span class="highlight">от 7000 рублей.</span>
+          Частные дома <span class="highlight">до 100 м²</span> -
+          <span class="highlight">от 15 000 руб.</span> (3-5 ракурсов)
         </li>
         <li class="list__item item">
-          Если помещение <span class="highlight">до 10 м²</span> является частью
-          квартиры, расчет идет по общей площади.
+          Коттеджные поселки -
+          <span class="highlight">от 50 000 руб.</span> (5-15 ракурсов)
         </li>
         <li class="list__item item">
-          Для больших объектов (от 150 м², офисы, банкетные или актовые залы)
-          стоимость начинается от <span class="hightlight">200 р./м²</span>
+          Жилые комплексы -
+          <span class="highlight">от 40 000 руб.</span> за здание
+        </li>
+        <li class="list__item item">
+          Генпланы территорий -
+          <span class="highlight">от 10 000 руб.</span> за ракурс
         </li>
       </ul>
       <ul class="details__list list">
         <h3 class="list__subheader subheader">Условия оплаты:</h3>
         <li class="list__item item">
-          Для начала работы требуется предоплата в размере
-          <span class="highlight">50%</span>.
+          Предоплата <span class="highlight">50%</span> для начала работы.
         </li>
         <li class="list__item item">
-          Остальная сумма оплачивается поэтапно в процессе выполнения проекта.
+          Окончательный расчет после утверждения финальных визуализаций.
         </li>
         <li class="list__item item">
-          Финальные рендеры передаются после полной оплаты.
+          Возможна поэтапная оплата для крупных проектов.
         </li>
       </ul>
     </section>
@@ -99,7 +98,7 @@
 const img = useImage();
 
 const bgUrl = computed(() => {
-  return img("/img/3.jpg");
+  return img("/img/Modern-house-day.Cam008.jpg");
 });
 </script>
 
@@ -123,7 +122,7 @@ const bgUrl = computed(() => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 90vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -143,11 +142,11 @@ const bgUrl = computed(() => {
     z-index: 2;
   }
   &__caption {
+    text-align: justify;
     z-index: 2;
     margin-top: 20px;
     width: 400px;
-    height: 150px;
-    padding: 30px 50px;
+    padding: 20px 30px;
     border-radius: 20px;
     color: $color-dark;
     background-color: $color-primary;
@@ -196,7 +195,7 @@ const bgUrl = computed(() => {
   margin-bottom: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .details {
     width: 500px;
     display: flex;

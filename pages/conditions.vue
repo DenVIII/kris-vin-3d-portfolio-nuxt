@@ -325,7 +325,7 @@ p {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .conditions {
     .wrapper {
       display: flex;

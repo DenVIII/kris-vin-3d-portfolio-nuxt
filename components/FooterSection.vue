@@ -116,7 +116,7 @@ footer p {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   footer {
     padding: 20px 40px;
   }

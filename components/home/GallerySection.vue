@@ -109,7 +109,7 @@ export default {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .gallery {
     padding: 40px 0;
     &__header.header {

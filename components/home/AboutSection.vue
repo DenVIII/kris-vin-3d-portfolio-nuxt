@@ -169,7 +169,7 @@ export default {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .about {
     margin: 0 auto;
     width: 100%;
