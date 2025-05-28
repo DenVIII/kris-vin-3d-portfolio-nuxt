@@ -5,7 +5,9 @@
       class="intro conditions__intro"
       :style="`background-image: url(${bgUrl})`"
     >
-      <h2 class="intro__header intro__header_title">Визуализация интерьера</h2>
+      <h2 class="intro__header intro__header_title">
+        Визуализация экстерьеров
+      </h2>
     </section>
     <section class="conditions__content conditions__content_wrapper">
       <div class="wrapper">
@@ -15,44 +17,38 @@
             <li class="list__item">
               <p class="item__title title">Фотореалистичные изображения</p>
               <p class="item__descr descr">
-                Ваши идеи обретут жизнь с помощью детализированных
-                3D-визуализаций. Каждый элемент интерьера будет выглядеть так,
-                будто он уже существует в реальности.
+                Точное представление вашего объекта в реальных условиях с
+                правильной передачей материалов, освещения и окружения.
               </p>
             </li>
             <li class="list__item">
-              <p class="item__title title">Экономию времени и ресурсов</p>
+              <p class="item__title title">Экономию времени и средств</p>
               <p class="item__descr descr">
-                Забудьте о бесконечных правках и пробных ремонтах. Вы сможете
-                оценить и доработать дизайн до начала реальных работ, избежав
-                лишних затрат.
+                Возможность оценить и скорректировать дизайн до начала
+                строительства, избежав дорогостоящих изменений на этапе
+                реализации.
               </p>
             </li>
             <li class="list__item">
-              <p class="item__title title">Удобство и комфорт сотрудничества</p>
+              <p class="item__title title">Профессиональный подход</p>
               <p class="item__descr descr">
-                Я работаю с вами на каждом этапе, чтобы результат точно
-                соответствовал вашим ожиданиям. Гибкий подход и оперативная
-                обратная связь — мои приоритеты.
+                Работаю с вами на всех этапах, чтобы результат полностью
+                соответствовал ожиданиям. Гибкость и оперативность - мои
+                приоритеты.
               </p>
             </li>
             <li class="list__item">
-              <p class="item__title title">
-                Возможность экспериментировать без риска
-              </p>
+              <p class="item__title title">Тестирование концепций</p>
               <p class="item__descr descr">
-                Используйте 3D-визуализацию, чтобы протестировать разные
-                варианты отделки, мебели и освещения. Это безопасный способ
-                убедиться, что выбранный дизайн идеально подходит для вашего
-                пространства.
+                Возможность сравнить разные варианты отделки фасадов,
+                ландшафтного дизайна и освещения без финансовых рисков.
               </p>
             </li>
             <li class="list__item">
-              <p class="item__title title">Легкость презентации проекта</p>
+              <p class="item__title title">Эффективную презентацию</p>
               <p class="item__descr descr">
-                Создаю визуализации, которые помогут вам наглядно показать идею
-                клиентам, заказчикам или подрядчикам. Это упрощает процесс
-                согласования и вдохновляет всех участников проекта.
+                Качественные визуализации помогут наглядно представить проект
+                инвесторам, заказчикам или согласующим органам.
               </p>
             </li>
           </ul>
@@ -61,115 +57,97 @@
           <h3 class="requirements__header">Что от вас необходимо:</h3>
           <ul class="requirements__list list">
             <li class="list__item">
-              <p class="item__title title">Планы помещения</p>
+              <p class="item__title title">Генплан местности</p>
               <p class="item__descr descr">
-                Чертежи с размерами: план расстановки мебели, план пола, план
-                потолка и развертки стен (если есть декоративные элементы).
+                Для отображения прилегающей территории и окружающей застройки
+                (если требуется).
               </p>
             </li>
             <li class="list__item">
-              <p class="item__title title">Примеры отделочных материалов</p>
+              <p class="item__title title">Архитектурные чертежи</p>
               <p class="item__descr descr">
-                Фотографии или образцы текстур для стен, пола, потолка и других
-                поверхностей.
+                Поэтажные планы, фасады, разрезы и план кровли с указанием всех
+                размеров.
               </p>
             </li>
             <li class="list__item">
-              <p class="item__title title">Информация по мебели и декору</p>
+              <p class="item__title title">Материалы отделки</p>
               <p class="item__descr descr">
-                Фотографии, ссылки на 3D-модели или артикулы мебели,
-                светильников и декоративных элементов.
+                Фотографии или описания материалов фасада, кровли и других
+                элементов экстерьера.
               </p>
             </li>
             <li class="list__item">
-              <p class="item__title title">Стилистические предпочтения</p>
+              <p class="item__title title">Стилистические референсы</p>
               <p class="item__descr descr">
-                Примеры интерьеров, которые вас вдохновляют, или коллажи, чтобы
-                передать настроение проекта.
+                Примеры архитектурных объектов, которые вас вдохновляют, для
+                понимания стиля проекта.
               </p>
             </li>
             <li class="list__item">
-              <p class="item__title title">Детализация по освещению</p>
+              <p class="item__title title">Освещение и окружение</p>
               <p class="item__descr descr">
-                Информация о расположении светильников, их типе и желаемой
-                атмосфере освещения.
-              </p>
-            </li>
-            <li class="list__item">
-              <p class="item__title title">Особые пожелания</p>
-              <p class="item__descr descr">
-                Уточнения по декоративным элементам, молдингам, нишам или другим
-                уникальным деталям.
+                Пожелания по времени суток для визуализации и особенности
+                ландшафтного дизайна.
               </p>
             </li>
             <li class="list__item">
               <p class="item__title title">Технические требования</p>
               <p class="item__descr descr">
-                Если есть специфические пожелания по ракурсам, разрешению или
-                формату визуализаций.
-              </p>
-            </li>
-            <li class="list__item">
-              <p class="item__title title">Обратная связь</p>
-              <p class="item__descr descr">
-                Готовность оперативно комментировать эскизы и вносить правки для
-                достижения идеального результата.
+                Предпочтения по ракурсам, разрешению и формату итоговых
+                изображений.
               </p>
             </li>
           </ul>
         </div>
       </div>
-      <div class="conditions__image"></div>
+      <div
+        class="conditions__image"
+        :style="`background-image: url(${bgUrl})`"
+      ></div>
     </section>
     <section class="conditions__stages conditions__stages_wrapper">
       <h2>Этапы работы:</h2>
       <ul class="stages">
         <li class="stage">
           <div class="stage__number">1</div>
-          <p class="stage__title title">Обсуждение и утверждение ТЗ</p>
+          <p class="stage__title title">Обсуждение проекта</p>
           <p class="stage__descr descr">
-            Вы присылаете техническое задание (планы, чертежи, примеры
-            материалов и мебели). Мы обсуждаем детали, ракурсы и стилистику,
-            чтобы я могла точно понять ваши ожидания. Вы вносите предоплату (50%
-            от стоимости заказа) и я начинаю работу.
+            Вы присылаете чертежи и техническое задание. Мы согласовываем
+            ключевые ракурсы и детализацию. После внесения предоплаты (50%)
+            начинается работа.
           </p>
         </li>
         <li class="stage">
           <div class="stage__number">2</div>
-          <p class="stage__title title">Первое превью: геометрия и ракурсы</p>
+          <p class="stage__title title">Базовое моделирование</p>
           <p class="stage__descr descr">
-            Я создаю базовую сцену с правильной геометрией и настраиваю ракурсы.
-            Вы получаете черно-белый эскиз для утверждения композиции и внесения
-            первых правок.
+            Создаю 3D-каркас здания и окружающего пространства. Вы получаете
+            схематичные скетчи для утверждения композиции.
           </p>
         </li>
         <li class="stage">
           <div class="stage__number">3</div>
-          <p class="stage__title title">Второе превью: материалы и текстуры</p>
+          <p class="stage__title title">Детализация фасадов</p>
           <p class="stage__descr descr">
-            После согласования геометрии я добавляю материалы, текстуры и
-            основное освещение. Вы оцениваете, как выглядит интерьер, и вносите
-            корректировки по материалам и декору.
+            Добавляю материалы, текстуры и основное освещение. Предоставляю
+            промежуточные рендеры для согласования.
           </p>
         </li>
         <li class="stage">
           <div class="stage__number">4</div>
-          <p class="stage__title title">
-            Третье превью: детализация и финальные правки
-          </p>
+          <p class="stage__title title">Ландшафт и окружение</p>
           <p class="stage__descr descr">
-            Я добавляю детали: мебель, декор, светильники и другие элементы. Вы
-            утверждаете финальный вид сцены, и мы вносим последние правки.
+            Прорабатываю детали ландшафтного дизайна, растительность и
+            окружающую среду. Вы утверждаете финальный вид.
           </p>
         </li>
         <li class="stage">
           <div class="stage__number">5</div>
-          <p class="stage__title title">Финальный рендер</p>
+          <p class="stage__title title">Финальная визуализация</p>
           <p class="stage__descr descr">
-            После согласования всех деталей я выполняю финальный рендер в
-            высоком разрешении. Вы вносите вторую часть платежа и получаете
-            готовые изображения, которые точно передают, как будет выглядеть ваш
-            интерьер.
+            После полной оплаты вы получаете высококачественные рендеры в
+            выбранных ракурсах с постобработкой.
           </p>
         </li>
       </ul>
@@ -181,7 +159,7 @@
 const img = useImage();
 
 const bgUrl = computed(() => {
-  return img("/img/3.jpg");
+  return img("/img/House-forest.Cam005.jpg");
 });
 </script>
 
@@ -206,7 +184,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 90vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -234,12 +212,17 @@ p {
   }
   &__content {
     position: relative;
-    min-height: 1400px;
     padding-top: 40px;
     gap: 40px;
     margin: 0 auto;
     width: 960px;
     margin-bottom: 40px;
+  }
+  &__benefits,
+  &__requierments {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .wrapper {
     position: relative;
@@ -249,12 +232,12 @@ p {
     z-index: 2;
   }
   &__image {
-    position: absolute;
-    bottom: 0%;
-    right: -5%;
+    background-size: 175%;
+    background-position: center;
+    margin-top: 50px;
+    margin-left: 80px;
     height: 420px;
     width: 960px;
-    z-index: 1;
   }
 
   h3 {
@@ -273,6 +256,7 @@ p {
   background-color: $color-primary;
   border-radius: 20px;
   padding: 20px 40px;
+  flex: 1;
   &__item {
     padding: 20px 0;
   }
@@ -326,14 +310,14 @@ p {
   padding-right: 10px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .conditions {
     &__content {
       width: 800px;
     }
     &__image {
       width: 800px;
-      right: 0%;
+      margin-left: 0;
     }
   }
   .stages {
@@ -356,8 +340,6 @@ p {
     }
     &__image {
       margin-top: 20px;
-      position: static;
-
       width: 100%;
     }
   }
@@ -378,13 +360,18 @@ p {
 @media (max-width: 500px) {
   .intro {
     background-attachment: scroll;
+    background-position-x: 30%;
   }
   .conditions {
     &__content {
       padding: 20px 0;
+      padding-bottom: 0;
     }
     &__image {
-      display: none;
+      height: 150px;
+      width: calc(100% - 20px);
+      margin: 0 auto;
+      margin-top: 20px;
     }
   }
   .list {
